@@ -188,7 +188,6 @@ function showFooter() {
 
 showFooter();
 
-
 const promokodContain = document.getElementById('promokodContain')
 
 function copyKod(){
