@@ -1,0 +1,78 @@
+@font-face {
+  font-family: "TildaSans";
+  src: url("../src/font/tilda-sans_light.ttf");
+}
+
+@font-face {
+  font-family: "TildaBold";
+  src: url("../src/font/tilda-sans_regular.ttf");
+}
+
+@font-face {
+  font-family: "Extra";
+  src: url("../src/font/tilda-sans_extra-bold-.ttf");
+}
+
+@font-face{
+  font-family: "Medium";
+  src: url("../src/font/tilda-sans_medium.ttf");
+}
+
+@font-face{
+  font-family: "Variable";
+  src: url("../src/font/TildaSans-VF.woff");
+}
+
+* {
+  font-family: "TildaSans" !important;
+}
+
+strong {
+  font-family: "Extra" !important;
+}
+
+b {
+  font-family: "TildaBold" !important;
+}
+
+@keyframes topBottom {
+  0% {
+    transform: translateX(0px) translateY(0px);
+    animation-timing-function: linear;
+  }
+  50% {
+    transform: translateX(145px) translateY(-112px);
+    animation-timing-function: linear;
+  }
+  100% {
+    transform: translateX(0px) translateY(0px);
+  }
+}
+
+#boy {
+  animation: topBottom 8s infinite linear;
+  backface-visibility: hidden;
+}
+
+@media only screen and (max-width: 639px) {
+  #heroSvg {
+    left: calc(50% - 240px + -760px);
+  }
+}
+
+@media screen and (max-width: 959px) {
+  #heroSvg {
+    left: calc(50% - 320px + -680px);
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  #heroSvg {
+    left: calc(50% - 480px + -520px);
+  }
+}
+
+
+.list-disc li::marker {
+  color: #51008f; /* Madde işaretinin rengini değiştir */
+}
